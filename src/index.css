@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Open+Sans:wght@400;600&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  --color-ac-gold: #d4af37;
+  --color-ac-red: #8b0000;
+  --color-ac-dark: #1a1a1a;
+}
+
+body {
+  font-family: "Cinzel", "Open Sans", sans-serif;
+  @apply bg-ac-dark text-white;
+}
+
+.assassins-bg {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
