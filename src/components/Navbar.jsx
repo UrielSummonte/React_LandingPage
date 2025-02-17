@@ -1,16 +1,16 @@
-import React from "react";
-import { useState } from "react";
-import { List, X } from "react-bootstrap-icons";
+import React from 'react'
+import { useState } from 'react'
+import { List, X } from 'react-bootstrap-icons'
 
 const navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false)
 
   const navItems = [
-    { name: "Inicio", href: "#" },
-    { name: "Historia", href: "#timeline" },
-    { name: "Juegos", href: "#games" },
-    { name: "Contacto", href: "#footer" },
-  ];
+    { id: 1, name: 'Inicio', href: '#' },
+    { id: 2, name: 'Historia', href: '#timeline' },
+    { id: 3, name: 'Juegos', href: '#games' },
+    { id: 4, name: 'Contacto', href: '#footer' },
+  ]
 
   return (
     <nav className="bg-ac-dark bg-opacity-80 text-ac-gold">
@@ -25,7 +25,7 @@ const navbar = () => {
             <div className="ml-10 flex items-baseline space-x-4">
               {navItems.map((item) => (
                 <a
-                  key={item.name}
+                  key={item.id}
                   href={item.href}
                   className="hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-300"
                 >
@@ -53,7 +53,7 @@ const navbar = () => {
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             {navItems.map((item) => (
               <a
-                key={item.name}
+                key={item.id}
                 href={item.href}
                 className="hover:bg-ac-gold hover:text-ac-dark block px-3 py-2 rounded-md text-base font-medium transition duration-300"
               >
@@ -64,7 +64,7 @@ const navbar = () => {
         </div>
       )}
     </nav>
-  );
-};
+  )
+}
 
-export default navbar;
+export default navbar

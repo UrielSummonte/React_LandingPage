@@ -1,5 +1,5 @@
-import React from "react";
-import { Facebook, TwitterX, Instagram } from "react-bootstrap-icons";
+import React from 'react'
+import { Facebook, TwitterX, Instagram } from 'react-bootstrap-icons'
 
 const Footer = () => {
   return (
@@ -47,30 +47,39 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-          <h3 className="text-lg font-semibold mb-4 text-ac-gold">
+            <h3 className="text-lg font-semibold mb-4 text-ac-gold">
               Síguenos
             </h3>
             <div className="flex space-x-4">
-                <a href="#" className="text-white hover:text-ac-gold transition duration-300">
-                    <Facebook size={24} />
-                </a>
-                <a href="#" className="text-white hover:text-ac-gold transition duration-300">
-                    <Instagram size={24} />
-                </a>
-                <a href="#" className="text-white hover:text-ac-gold transition duration-300">
-                    <TwitterX size={24} />
-                </a>
+              <a
+                href="#"
+                className="text-white hover:text-ac-gold transition duration-300"
+              >
+                <Facebook size={24} />
+              </a>
+              <a
+                href="#"
+                className="text-white hover:text-ac-gold transition duration-300"
+              >
+                <Instagram size={24} />
+              </a>
+              <a
+                href="#"
+                className="text-white hover:text-ac-gold transition duration-300"
+              >
+                <TwitterX size={24} />
+              </a>
             </div>
           </div>
         </div>
         <div className="mt-8 border-t border-gray-700 pt-8 text-center">
-            <p className="text-sm text-gray-400">
-                &copy; 2025 Assassin's Creed Fan Page. Todos los derechos reservados
-            </p>
+          <p className="text-sm text-gray-400">
+            &copy; 2025 Assassin's Creed Fan Page. Todos los derechos reservados
+          </p>
         </div>
       </div>
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer
