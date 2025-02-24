@@ -53,11 +53,11 @@ const Timeline = () => {
               <div
                 key={index}
                 className={`relative ${
-                  index % 2 === 0 ? 'md:pr-8' : 'md:pl-8 md:col-start-2'
+                  index % 2 === 0 ? 'md:pr-8 md:ml-8' : 'md:pl-8 md:col-start-2'
                 }`}
               >
                 <div className="bg-ac-dark p-6 rounded-lg border border-ac-gold">
-                  <div className="absolute top-6 -mt-1.5 rounded-full bg-ac-gold text-ac-dark font-bold text-xs py-1 px-2 -left-2 md:left-auto md:right-auto md:-ml-[4.5rem] md:-mr-[4.5rem]">
+                  <div className="absolute top-2 -mt-1.5 rounded-full bg-ac-gold text-ac-dark font-bold text-xs py-1 px-2 -left-2 md:left-auto md:right-auto md:-ml-[4.5rem] md:-mr-[4.5rem]">
                     {event.year}
                   </div>
                   <h3 className="text-xl font-semibold text-ac-gold">

@@ -40,7 +40,7 @@ const GameList = () => {
         <h2 className="text-3xl font-extrabold text-ac-gold sm:text-4xl mb-8">
           Juegos de la saga
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {games.map((game, index) => (
             <motion.div
               whileHover={{ scale: 1.1 }}
